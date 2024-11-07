@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemicals4Cheap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid gray;
+        }
+
+        .sidebar a:hover {
+            background-color: darkgrey;
+            border-radius: 5px;
+        }
+
+        .container {
+            margin-left: 270px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .Chemicals {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .Chemical {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+                }
+
+        .Chemical img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 3px solid black;
+        }
+
+        .Chemical h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .Chemical p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .Chemical button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .Chemical button:hover {
+            background-color: darkgreen;
+        }
+
+        footer {
+            text-align: center;
+            background: green;
+            color: white;
+            padding: 15px;
+            border-top: 2px solid white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Chemicals4Cheap.com</h3>
+        <a href="Account.html">Account</a>
+        <a href="index.html" >Products</a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Chemicals4cheap.com</h1>
+            <p>(Click on the products images for more info.)</p>
+        </header>
+        <section id="Chemicals">
+            <h2>Chemicals/Products</h2>
+            <div class="Chemicals">
+                <div class="Chemical">
+                    <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Silver-Nitrate" target="_blank">
+                    <span>
+                    <img src="Silver Nitrate.jpg" alt="Silver Nitrate">
+                    </span>
+                    </a>
+                    <h3>Silver Nitrate</h3>
+                    <p>AgNO3, 99.99% Purity.</p>
+                    <p>Price: ₱12,900 Per 100 Grams</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="Chemical">     
+                    <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Nitric-Acid">
+                    <span>
+                    <img src="Nitric Acid.jpg" alt="Nitric Acid">
+                    </span>
+                    </a>
+                    <h3>Nitric Acid</h3>
+                    <p>HNO₃, 95% Purity.</p>
+                    <p>Price: ₱350 Per KG</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="Chemical">
+                    <a href="https://pubchem.ncbi.nlm.nih.gov/element/Sulfur#section=Element-Name">
+                    <span>
+                    <img src="Sulfur.jpg" alt="Sulfur">
+                    </span>
+                    </a>
+                    <h3>Sulfur</h3>
+                    <p>S, 99% Purity</p>
+                    <p>Price: ₱1000 Per KG</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="Chemical">
+                    <a href="https://en.wikipedia.org/wiki/Laboratory_glassware">
+                    <span>
+                    <img src="Labset.jpg" alt="Labset">
+                    </span>
+                    </a>
+                    <h3>Chemistry Labware Set</h3>
+                    <p>Everything you need for advanced chemistry.</p>
+                    <p>Price: ₱11,500 per set.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h3>Top quality chemicals for the cheapest price available! </h3>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chemicals4Cheap</title>
+	<style type="text/css">
+		 body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: black;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid gray;
+        }
+
+        .sidebar a:hover {
+            background-color: darkgrey;
+            border-radius: 5px;
+        }
+
+        .container {
+            margin-left: 270px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }            
+
+        footer {
+            text-align: center;
+            background: green;
+            color: white;
+            padding: 15px;
+            border-top: 2px solid white;
+            margin-top: 20px;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"],
+        textarea {
+        
+            width: 100%;
+            padding: 8px;
+            margin: 15px 0;
+            border: 3px solid black;
+            border-radius: 2px;
+        }
+        input[type="Submit"]{
+         background-color: green;
+         color: white;
+         padding: 10px 20px;
+         margin: 10px 5px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+        }
+        input[type="Reset"] { 
+         background-color: red; 
+         color: white;
+         padding: 10px 20px;
+         margin: 10px 5px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+        }
+        input[type="Submit"]:hover {
+            background-color: darkgreen;
+        }
+        input[type="Reset"]:hover{
+            background-color: darkred;
+
+        }
+
+
+	</style>
+</head>
+<body>
+ 
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Chemicals4Cheap.com</h3>
+        <a href="Account.html">Account</a>
+        <a href="index.html">Products</a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Chemicals4cheap.com</h1>
+        </header>
+            <section id="form">
+             <h1>LOGIN</h1>
+                <div class="form"> 
+                <br><br><br>
+                    <label for="Name"><strong>Name</strong></label>
+                    <input type="text" id="Name" name="Name">
+
+                    <label for="Email"><strong>Email</strong></label>
+                    <input type="email" id="Email" name="Email">
+
+                    <label for="Password"><strong>Password</strong></label>
+                    <input type="password" id="Password" name="Password">
+
+                    <input type="submit" value="Login" id="Login"> 
+                    <input type="reset" value="Reset" id="Reset">
+      
+                </div>
+            </section> 
+            <section id="form2">
+                <br><br><br>
+             <h1>CONTACT FORM</h1>
+                
+                    <label for="Name"><strong>Name</strong></label>
+                    <input type="text" id="Name" name="Name">
+
+                    <label for="Email"><strong>Email</strong></label>
+                    <input type="email" id="Email" name="Email">
+                     
+                     <label for="textarea"><strong>Concerns</strong></label>
+                    <textarea id="Textarea" name="Textarea" rows="5" cols="75"> 
+                    </textarea> 
+                     
+                    <input type="submit" value="Login" id="Login"> 
+                    <input type="reset" value="Reset" id="Reset">
+      
+
+            </section>       
+        <footer>
+            <h3>Top quality chemicals for the cheapest price available! </h3>
+        </footer>
+    </div>
+</body>
+</html>
